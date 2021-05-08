@@ -1,0 +1,26 @@
+{
+  "name": "panelflex-website",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "12.18.0",
+    "npm": "6.13.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "google-map-react": "^2.1.9",
+    "next": "10.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-simple-chatbot": "^0.6.1",
+    "reactstrap": "^8.9.0",
+    "styled-components": "^4.4.1"
+  }
+}

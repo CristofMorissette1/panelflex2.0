@@ -1,0 +1,192 @@
+.homeMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeLandingImage {
+    width: 100%;
+    
+}
+
+.homeMainTitle {
+    color: #fff;
+    font-size: 250%;
+    font-weight: 400;
+}
+
+.homeTitleSmall {
+    color: #fff;
+    font-size: 150%;
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+.homeHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,.6)), url("https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/home%2Fhome%20landing.jpg?alt=media&token=aeeacaaf-f9de-458a-8626-06641dae7d8f");
+    height: 120vh;
+}
+
+.homeHeaderButtons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.homeFirstButton {
+    background-color: #09aa06;
+    width: 12%;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 400;
+    margin-right: 10%;
+}
+
+.homeFirstButton:hover {
+    background-color: #e80700;
+    transition-duration: 0.5s;
+}
+
+.homeSecondButton {
+    background-color:#09aa06;
+    width: 12%;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.homeSecondButton:hover {
+    background-color: #e80700;
+    transition-duration: 0.5s;
+}
+
+.homeBodyTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    color: #494949;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+.homeBodyContainer {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homeBodyContainerSmall {
+    width: 45%;
+    margin-left: 5%;
+    color: #494949;
+    margin-top: 1%;
+}
+
+.homeBodyTitleSmall {
+    font-size: 140%;
+    font-weight: 700;
+}
+
+.homeBodyText {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.homeBodyButton {
+    background-color:#09aa06;
+    color: #fff;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0%;
+    font-size: 110%;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.homeBodyButton:hover {
+    background-color: #e80700;
+    transition-duration: 0.5s;
+}
+
+.homeMainCapabilitiesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url("https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/home%2Fhome%20our%20capabilities.jpg?alt=media&token=12bc1439-c57c-45f6-83fa-7fe5a9109dd9");
+    background-size: cover;
+}
+
+.homeCapabilitiesContainer2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeCapabilitiesContainer3 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeCapabilitiesContainerTitle {
+    color:#09aa06;
+    font-size: 350%;
+    font-weight: 500;
+}
+
+.homeCapabilitiesTitle {
+    color:#09aa06;
+}
+
+.homeCapabilitiesText {
+    color: #fff;
+    margin-top: 0%;
+    font-size: 115%;
+    font-weight: 500;
+    width: 70%;
+}
+
+.homeCapabilitiesTextSmall {
+    color: #fff;
+    font-size: 115%;
+    font-weight: 500;
+    margin-top: 0%;
+    width: 70%;
+}
+
+.homeCapabilitiesButton {
+    background-color:#09aa06;
+    color: #fff;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0%;
+    font-size: 110%;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+.homeCapabilitiesButton:hover {
+    background-color: #e80700;
+    transition-duration: 0.5s;
+}
