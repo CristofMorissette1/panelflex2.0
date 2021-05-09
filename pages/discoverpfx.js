@@ -2,16 +2,28 @@ import Head from 'next/head';
 import { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import SimpleMap from '../components/googlemaps';
+import Chatbot from '../components/chatbot';
+import Image from 'next/image';
+
 
 class DiscoverPfx extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          check: false,
+        };
+      }
+    
+    changeCheck = () => {
+    this.state.check?this.setState({check: false}):this.setState({check: true})
+    }
+
     render() {
         return (
             <div className="pfxMainContainer">
                 <Header/>
                 <div className="discoverHeaderContainer">
                     <h1 className="pfxMainTitle">Discover PanelFlex</h1>
-                    <img className="homeLandingImage" src="https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/discover%20pfx%2Fdiscoverpfx.png?alt=media&token=be511739-6eb3-4155-92c3-836c667e5ee4"/>
                 </div>
                 <div className="pfxBodyContainer">
                     <h2 className="pfxTitleSmall">Our Vision</h2>
@@ -62,9 +74,31 @@ class DiscoverPfx extends Component {
                         <img className="facilityImage1" src="https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/discover%20pfx%2Ffacility2.jpg?alt=media&token=f9948afd-a54e-49f4-a1bf-558045b78c97"/>
                         <img className="facilityImage1" src="https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/discover%20pfx%2Ffacility3.jpg?alt=media&token=ca89649b-bb8f-4930-a82e-035e8ccd542f"/>
                     </div>
-                    <SimpleMap/>
                     </div>
                 </div>
+                {this.state.check?<div style={{position: 'fixed', bottom: '10px', right: '20px' }}><Chatbot />
+                {/* <button style={{marginTop: '20px',marginRight: '0px', marginLeft: 'auto'}} onClick={this.changeCheck}>Open Chat</button> */}
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <div style={{ marginTop: '20px', backgroundColor: 'green', borderRadius: '50%', padding: '16px', marginRight: '0px', marginLeft: 'auto' }} onClick={this.changeCheck}>
+                <img
+                src="/cross.png"
+                alt="PanelFlex.com"
+                width={35}
+                height={35}
+                />
+                </div>
+                </div>
+                </div>:
+                // <button style={{position: 'fixed', bottom: '10px', right: '20px', }} onClick={this.changeCheck}>Open Chat</button>
+                <div style={{position: 'fixed', bottom: '10px', right: '20px', backgroundColor: 'green', borderRadius: '50%', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} onClick={this.changeCheck}>
+                <img
+                src="/chat-icon.png"
+                alt="PanelFlex.com"
+                width={55}
+                height={55}
+                />
+                </div>
+                }
                 <Footer/>
             </div>
         )

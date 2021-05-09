@@ -1,9 +1,22 @@
 import Head from 'next/head';
 import { Component } from 'react';
 import Header from '../components/header';
+import Chatbot from '../components/chatbot';
+import Image from 'next/image';
 
 
 class Csa extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          check: false,
+        };
+      }
+    
+    changeCheck = () => {
+    this.state.check?this.setState({check: false}):this.setState({check: true})
+    }
+
     render() {
         return (
             <div className="csaMainContainer">
@@ -20,6 +33,7 @@ class Csa extends Component {
                     <p className="csaTextSmall">Canadian and US Certification:<br/> Control assemblies bearing c CSA us are certified to have been built in accordance with or exceed the applicable requirements of CSA C22.2 #14 and UL 508 and are approved for use in Canada and the United States.   See "US Certification" for description of American certification.</p>
                 </div>
             </div>
+           
             </div>
         )
     }

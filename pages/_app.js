@@ -16,6 +16,8 @@ import '../styles/lightingpanels.css';
 import '../styles/telecommunicationspanels.css';
 import '../styles/staging.css';
 import '../styles/chatbot.css';
+import '../styles/skid.css';
+import '../styles/protection.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

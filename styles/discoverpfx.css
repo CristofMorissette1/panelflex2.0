@@ -4,8 +4,12 @@
 
 .discoverHeaderContainer {
     display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,.6)), url("https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/discover%20pfx%2Fdiscover%20pic.jpg?alt=media&token=c2cf52f5-884f-4bf1-853a-080f2fbd5ba7");
     flex-direction: column;
     width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
 }

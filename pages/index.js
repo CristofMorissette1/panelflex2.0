@@ -10,16 +10,32 @@ class Home extends Component {
     super(props);
     this.state = {
       check: false,
+       showServicesMenu: false,
     };
+     this.showServicesMenu = this.showServicesMenu.bind(this);
   }
+  
   changeCheck = () => {
     this.state.check?this.setState({check: false}):this.setState({check: true})
+  }
+  
+  showServicesMenu(e) {
+      e.preventDefault();
+      if (this.state.showServicesMenu == false) {
+      this.setState({
+        showServicesMenu: true,
+      });
+    } else {
+      this.setState({
+        showServicesMenu: false,
+      });
+    }
   }
 
   render() {
     return (
       <div className="homeMainContainer">
-        <Header/>
+        <Header/>         
         <div className="homeHeaderContainer">
           <h1 className="homeMainTitle">We Build Electrical Control Panels</h1>
           <h3 className="homeTitleSmall">PANELFLEX is a CSA approved, COR certified Custom Electrical Control Panel Solutions provider</h3>
@@ -69,7 +85,7 @@ class Home extends Component {
         <div style={{ marginTop: '20px', backgroundColor: 'green', borderRadius: '50%', padding: '16px', marginRight: '0px', marginLeft: 'auto' }} onClick={this.changeCheck}>
         <img
         src="/cross.png"
-        alt="Chat"
+        alt="PanelFlex.com"
         width={35}
         height={35}
         />
@@ -80,7 +96,7 @@ class Home extends Component {
         <div style={{position: 'fixed', bottom: '10px', right: '20px', backgroundColor: 'green', borderRadius: '50%', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} onClick={this.changeCheck}>
           <img
         src="/chat-icon.png"
-        alt="Chat"
+        alt="PanelFlex.com"
         width={55}
         height={55}
         />
