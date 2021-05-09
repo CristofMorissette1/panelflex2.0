@@ -1,5 +1,5 @@
 module.exports = {
-  distDir: 'out',
+  // distDir: 'out',
     exportPathMap: function () {
       return {
         '/': { page: '/' },
