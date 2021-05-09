@@ -1,6 +1,6 @@
 .productHeaderContainer {
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,.6)), url("https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/products%20%26%20services%2Fproduct%20pic.jpg?alt=media&token=81387ddd-7f0b-40e9-b88f-92bb61df0cce");
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,.6)), url("https://firebasestorage.googleapis.com/v0/b/panelflex-7663b.appspot.com/o/products%20%26%20services%2Fproduct%20pic.jpg?alt=media&token=81387ddd-7f0b-40e9-b88f-92bb61df0cce"); */
     flex-direction: column;
     width: 100%;
     height: 40vh;
